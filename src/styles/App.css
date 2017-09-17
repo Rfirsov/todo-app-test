@@ -1,0 +1,109 @@
+@import './reset.css';
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.addTodo {
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	border-bottom: 1px solid #000;
+}
+
+.addTodo h1 {
+	margin: 5px;
+	font: 18px/24px arial, sans-serif;	
+}
+
+.addTodo form {
+	width: 30vw;
+	min-width: 220px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #cccccc;
+}
+
+.addTodo form * {
+	margin: 5px;
+} 
+
+.addTodo form button {
+	margin: 10px;
+	width: 100px;
+}
+
+.viewTodo {
+	padding-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.filterTodo {
+	padding: 5px;
+	flex: 1 10 10%;
+	display: flex;
+	flex-direction: column;
+	background-color: #cccccc;
+}
+
+.filterTodo h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.filterTodo form * {
+	margin: 5px;
+} 
+
+.filterTodo input {
+	max-width: 80%;
+}
+
+.todoGrid {
+	flex: 5 0 70%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.todoItem {
+	height: 200px;
+	margin: 0 10px 10px;
+	padding: 5px;
+	flex: 1 0 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	word-wrap: break-word;
+	background-color: #cccccc;
+}
+
+.todoItem .title-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.todoItem .title-container h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.todoItem .title-container button {
+}
+
+.todoItem .description {
+	padding-top: 10px;
+	flex:  1 0 75%;
+}
+
+.todoItem:nth-child(4n) {
+	margin-right: 0;
+}
+
